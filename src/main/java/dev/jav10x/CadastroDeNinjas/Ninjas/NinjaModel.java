@@ -1,7 +1,10 @@
-package dev.jav10x.CadastroDeNinjas;
+package dev.jav10x.CadastroDeNinjas.Ninjas;
 
+import dev.jav10x.CadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
-import org.springframework.web.util.pattern.PathPattern;
+
+import java.util.LinkedList;
+import java.util.List;
 
 
 //O ENTITY TRANSFORMA UMA CLASSE EM UMA ENTIDADE PARA BANCO DE DADOS.
@@ -15,6 +18,7 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+    private List <MissoesModel> missoes = new LinkedList<>();
 
 
     public NinjaModel() {
