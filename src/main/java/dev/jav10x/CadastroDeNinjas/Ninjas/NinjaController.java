@@ -11,5 +11,7 @@ public class NinjaController {
         return "Essa é a minha primeira mensagem";
     }
 
-
+    public String testeDeCodigo() {
+        return "Testando";
+    }
 }
