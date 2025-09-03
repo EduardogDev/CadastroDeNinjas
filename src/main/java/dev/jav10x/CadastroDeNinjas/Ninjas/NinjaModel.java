@@ -18,7 +18,10 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
-    private List <MissoesModel> missoes = new LinkedList<>();
+
+    @ManyToOne // PODE TER APENAS UM OBJETO
+    @JoinColumn(name = "missoes_id")    //FOREING KEY OU CHAVE ESTRANGEIRA
+    private MissoesModel missoes;
 
 
     public NinjaModel() {
