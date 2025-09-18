@@ -11,9 +11,9 @@ import java.util.List;
 
 @Entity
 @Table(name = "tb_cadastro_missoes")
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
+@NoArgsConstructor //FERRAMENTAS DO LO
+@AllArgsConstructor //FERRAMENTAS DO LOMBOK
+@Data //FERRAMENTAS DO LOMBOK
 public class MissoesModel {
 
     @Id
