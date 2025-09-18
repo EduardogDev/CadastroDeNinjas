@@ -20,11 +20,16 @@ public class NinjaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_sequencial")
     private Long id;
+
+    @Column(name = "nome")
     private String nome;
 
     @Column(unique = true)
     private String email;
+
+    @Column(name = "idade")
     private int idade;
 
     @ManyToOne // PODE TER APENAS UM OBJETO
