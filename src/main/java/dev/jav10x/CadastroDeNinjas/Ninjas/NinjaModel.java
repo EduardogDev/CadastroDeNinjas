@@ -23,14 +23,17 @@ public class NinjaModel {
     @Column(name = "id_sequencial")
     private Long id;
 
+    @Column (name = "email")
+    private String email;
+
     @Column(name = "nome")
     private String nome;
 
-    @Column(unique = true)
-    private String email;
-
     @Column(name = "idade")
     private int idade;
+
+    @Column(name = "img_url")
+    private String imgUrl;
 
     @ManyToOne // PODE TER APENAS UM OBJETO
     @JoinColumn(name = "missoes_id")    //FOREING KEY OU CHAVE ESTRANGEIRA
